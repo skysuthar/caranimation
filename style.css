@@ -9,6 +9,8 @@ body{
 .sky{
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
+     overflow-y: hidden;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     position: absolute;
@@ -25,12 +27,12 @@ body{
 }
 .track{
     height: 60vh;
-    width: 8000vw;
+    width: 80000vw;
     background-image: url(track.png);
     background-repeat: repeat-x; 
     position: absolute;
     top: 70vh;
-    overflow: hidden;
+    overflow-y: hidden;
     animation: carMove linear 13s infinite;
 
 }
@@ -93,18 +95,18 @@ body{
         transform: translateY(-5px);
     }
 }
-@keyframes shakebody
+/*@keyframes shakebody
 {
     0%{
-        transform: translateY(-50px);
+        transform: translateY(-10px);
     }
     50%{
         transform: translateY(0px);
     }
     100%{
-        transform: translateY(-50px);
+        transform: translateY(10px);
     }
-}
+}*/
 @media screen and (min-width: 1200px) and (max-width: 1440px){
     .car{
     height: 100px;
@@ -155,9 +157,9 @@ body{
     background-image: url(track.png);
     background-repeat: repeat-x; 
     position: absolute;
-    top: 70vh;/*
-    overflow: hidden!important;*/
-    animation: carMove linear 13s infinite;
+    top: 70vh;
+    overflow: hidden!important;
+    animation: carMove linear 5s infinite;
 
 }
 
@@ -182,8 +184,8 @@ body{
     background-repeat: repeat-x; 
     position: absolute;
     top: 70vh;
-   /* overflow: hidden!important;*/
-    animation: carMove linear 13s infinite;
+    overflow: hidden!important;
+    animation: carMove linear 3s infinite;
 
 }
 /*.sky{
@@ -217,18 +219,18 @@ body{
     background-repeat: repeat-x; 
     position: absolute;
     top: 70vh;
-    /*overflow: hidden!important;*/
-    animation: carMove linear 13s infinite;
+    overflow: hidden!important;
+    animation: carMove linear 3s infinite;
 
 }
-/*.sky{
+.sky{
     height: 100vh;
     width: 100%;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     position: absolute;
     overflow: hidden;
-}*/
+}
 
 }
 @media screen and (max-width :416px){
@@ -252,7 +254,7 @@ body{
     position: absolute;
     top: 70vh;
     overflow: hidden!important;
-    animation: carMove linear 13s infinite;
+    animation: carMove linear 2s infinite;
 
 }
 /*.sky{
@@ -265,6 +267,3 @@ body{
 }*/
 
 }
-
-
-
